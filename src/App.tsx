@@ -22,7 +22,6 @@ import RegistryGifts from './components/RegistryGifts/RegistryGifts';
 import Guestbook from './components/Guestbook/Guestbook';
 import FAQs from './components/FAQs/FAQs';
 import HashtagSection from './components/HashtagSection/HashtagSection';
-import LocalAttractions from './components/LocalAttractions/LocalAttractions';
 import SiteFooter from './components/SiteFooter/SiteFooter';
 import './App.css';
 

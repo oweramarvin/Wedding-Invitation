@@ -12,14 +12,6 @@ export interface RSVPProps {
   open: boolean;
   onClose: () => void;
 }
-
-const MEAL_OPTIONS = [
-  { value: 'chicken', label: 'Chicken' },
-  { value: 'beef', label: 'Beef' },
-  { value: 'fish', label: 'Fish' },
-  { value: 'vegetarian', label: 'Vegetarian' },
-];
-
 /* -------------------------------- Confetti -------------------------------- */
 
 function Confetti() {
