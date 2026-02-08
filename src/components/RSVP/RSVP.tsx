@@ -192,18 +192,6 @@ export default function RSVP({ open, onClose }: RSVPProps) {
             </label>
 
             <label>
-              <span>Meal preference</span>
-              <select name="meal" required>
-                <option value="">Select</option>
-                {MEAL_OPTIONS.map((o) => (
-                  <option key={o.value} value={o.label}>
-                    {o.label}
-                  </option>
-                ))}
-              </select>
-            </label>
-
-            <label>
               <span>Message (optional)</span>
               <textarea
                 name="message"

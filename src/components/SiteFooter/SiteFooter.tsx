@@ -25,7 +25,11 @@ export default function SiteFooter() {
         <p className={styles.credits}>
           {COUPLE.groom} & {COUPLE.bride} · With love
         </p>
+        <p className={styles.developer}>
+          Developer: Marvin Owera
+        </p>
       </div>
     </footer>
   );
 }
+

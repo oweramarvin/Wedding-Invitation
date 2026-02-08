@@ -24,7 +24,7 @@ export default function VideoMessage({ visible = true }: VideoMessageProps) {
         }}
       >
         <h2 id="video-heading" className={styles.title}>
-          A Note From Us
+          Our Journey Together
         </h2>
         <div className={styles.frame}>
           <iframe

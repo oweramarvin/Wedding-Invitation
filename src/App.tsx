@@ -194,10 +194,12 @@ export default function App() {
       <div ref={setRef('hashtag')} data-section="hashtag">
         <HashtagSection visible={visible.has('hashtag')} />
       </div>
-
+      
+      {/*
       <div ref={setRef('attractions')} data-section="attractions">
         <LocalAttractions visible={visible.has('attractions')} />
       </div>
+      */}
 
       <section
         className="closing-section"

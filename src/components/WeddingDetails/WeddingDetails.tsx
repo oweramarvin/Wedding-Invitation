@@ -13,7 +13,8 @@ export interface WeddingDetailsProps {
 const MONTH = 'March';
 const DAY = '22';
 const YEAR = '2026';
-const TIME = '3:00 PM';
+const TIME_Ceremony = 'Ceremony 1:00 PM';
+const TIME_Reception = 'Reception 3:00 PM';
 
 const DRESS_ICON = (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
@@ -38,7 +39,8 @@ export default function WeddingDetails({ visible = true }: WeddingDetailsProps) 
             <span className={styles.dateNum} data-animate>{DAY}</span>
             <span className={styles.dateNum} data-animate>{YEAR}</span>
           </div>
-          <p className={styles.time}>{TIME}</p>
+          <p className={styles.time}>{TIME_Ceremony}</p>
+          <p className={styles.time}>{TIME_Reception}</p>
         </div>
 
         <div className={styles.dressCode}>

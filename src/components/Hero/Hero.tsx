@@ -50,8 +50,8 @@ export default function Hero({ visible = true, children }: HeroProps) {
           <span className={styles.name}>{COUPLE.bride}</span>
         </h1>
 
-        <p className={styles.location}>{CEREMONY.name}</p>
-        <p className={styles.reception}>{RECEPTION.name}</p>
+        <p className={styles.location}>♥ Ceremony: {CEREMONY.name}</p>
+        <p className={styles.reception}>♥ Reception: {RECEPTION.name}</p>
         <p className={styles.date}>{DATE_LABEL}</p>
 
         {children}

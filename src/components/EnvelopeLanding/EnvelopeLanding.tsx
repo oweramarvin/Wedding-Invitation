@@ -27,7 +27,7 @@ export default function EnvelopeLanding({ open, onOpen }: EnvelopeLandingProps) 
               <div className={styles.content}>
                 {/* Top quote */}
                 <p className={styles.topQuote}>
-                  "Two souls, one heart"
+                  "We decided on forever"
                 </p>
 
                 {/* Groom name */}
@@ -57,7 +57,7 @@ export default function EnvelopeLanding({ open, onOpen }: EnvelopeLandingProps) 
 
                 {/* Bottom quote */}
                 <p className={styles.bottomQuote}>
-                  "Forever begins today"
+                  "Happily ever after starts here"
                 </p>
               </div>
             </div>
