@@ -1,0 +1,203 @@
+.section {
+    padding: var(--space-2xl) var(--space-md);
+    background: var(--color-champagne);
+}
+
+.inner {
+    max-width: 40rem;
+    margin: 0 auto;
+    transition: opacity 0.9s var(--ease-out), transform 0.9s var(--ease-out);
+}
+
+.title {
+    font-family: var(--font-serif);
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: var(--color-ink);
+    margin: 0 0 var(--space-lg);
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--color-ivory);
+    padding: var(--space-md);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: transform var(--duration-s) var(--ease-out), box-shadow var(--duration-s);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+}
+
+.cardTitle {
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-gold);
+    margin: 0 0 var(--space-xs);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.cardName {
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--color-ink);
+    margin: 0 0 0.25rem;
+}
+
+.cardTime {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-charcoal);
+    margin: 0 0 var(--space-xs);
+}
+
+.cardAddress {
+    font-size: 0.9rem;
+    color: var(--color-muted-gray);
+    margin: 0 0 var(--space-sm);
+    line-height: 1.4;
+}
+
+.mapContainer {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: var(--space-sm);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.cardBtn {
+    align-self: flex-start;
+    /* aligns button to left */
+    padding: var(--space-xs) var(--space-sm);
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--color-ink);
+    background: transparent;
+    border: 1px solid var(--color-charcoal);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background var(--duration-s), color var(--duration-s);
+}
+
+.cardBtn:hover {
+    background: var(--color-champagne);
+}
+
+/* Directions popup */
+.popupOverlay {
+    position: fixed;
+    inset: 0;
+    z-index: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-md);
+    background: rgba(61, 58, 55, 0.6);
+    animation: popupFade 0.25s var(--ease-out);
+}
+
+@keyframes popupFade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.popup {
+    position: relative;
+    background: var(--color-ivory);
+    padding: var(--space-lg);
+    border-radius: 8px;
+    max-width: 20rem;
+    width: 100%;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2);
+    animation: popupSlide 0.3s var(--ease-out);
+}
+
+@keyframes popupSlide {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.popupClose {
+    position: absolute;
+    top: var(--space-sm);
+    right: var(--space-sm);
+    width: var(--touch-min);
+    height: var(--touch-min);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--color-charcoal);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.popupTitle {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    margin: 0 0 var(--space-sm);
+    color: var(--color-ink);
+}
+
+.popupAddress {
+    font-size: 0.95rem;
+    color: var(--color-charcoal);
+    margin: 0 0 var(--space-md);
+    line-height: 1.5;
+}
+
+.popupBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: var(--touch-min);
+    padding: var(--space-sm) var(--space-md);
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-ivory);
+    background: var(--color-ink);
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background var(--duration-s);
+}
+
+.popupBtn:hover {
+    background: var(--color-charcoal);
+}

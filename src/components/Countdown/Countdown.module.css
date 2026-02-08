@@ -1,0 +1,6 @@
+.wrap { margin-bottom: var(--space-xl); transition: opacity 0.8s var(--ease-out); }
+.grid { display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap; }
+.unit { display: flex; flex-direction: column; align-items: center; min-width: 3rem; }
+.value { font-family: var(--font-serif); font-size: 1.75rem; font-weight: 500; color: var(--color-ivory); line-height: 1.2; text-shadow: 0 1px 4px rgba(0,0,0,0.2); }
+.label { font-family: var(--font-sans); font-size: 0.65rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(253,251,247,0.85); margin-top: 0.2rem; }
+@media (min-width: 600px) { .value { font-size: 2.25rem; } .label { font-size: 0.7rem; } }

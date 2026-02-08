@@ -1,0 +1,10 @@
+.section { padding: var(--space-2xl) var(--space-md); background: var(--color-ivory); }
+.inner { max-width: 40rem; margin: 0 auto; transition: opacity 0.9s var(--ease-out), transform 0.9s var(--ease-out); }
+.title { font-family: var(--font-serif); font-size: 1.75rem; font-weight: 500; color: var(--color-ink); margin: 0 0 var(--space-sm); text-align: center; letter-spacing: 0.02em; }
+.intro { font-size: 0.95rem; color: var(--color-charcoal); text-align: center; margin: 0 0 var(--space-lg); line-height: 1.5; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-md); }
+.card { display: block; padding: var(--space-md); background: var(--color-champagne); border: 1px solid var(--color-warm-beige); border-radius: 8px; text-decoration: none; color: inherit; transition: transform var(--duration-s) var(--ease-out), box-shadow var(--duration-s); }
+.card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+.cardTitle { font-family: var(--font-serif); font-size: 1.1rem; font-weight: 500; color: var(--color-ink); margin: 0 0 var(--space-xs); }
+.cardDesc { font-size: 0.9rem; color: var(--color-charcoal); line-height: 1.5; margin: 0 0 var(--space-xs); }
+.cardLink { font-size: 0.85rem; font-weight: 500; color: var(--color-gold); }

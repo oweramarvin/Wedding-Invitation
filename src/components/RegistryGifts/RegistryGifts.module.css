@@ -1,0 +1,11 @@
+.section { padding: var(--space-2xl) var(--space-md); background: var(--color-ivory); }
+.inner { max-width: 40rem; margin: 0 auto; transition: opacity 0.9s var(--ease-out), transform 0.9s var(--ease-out); }
+.title { font-family: var(--font-serif); font-size: 1.75rem; font-weight: 500; color: var(--color-ink); margin: 0 0 var(--space-sm); text-align: center; letter-spacing: 0.02em; }
+.intro { font-size: 0.95rem; color: var(--color-charcoal); text-align: center; margin: 0 0 var(--space-lg); line-height: 1.5; }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-md); }
+.card { display: block; padding: var(--space-lg); background: var(--color-champagne); border: 1px solid var(--color-warm-beige); border-radius: 8px; text-decoration: none; color: inherit; transition: transform 0.35s var(--ease-out), box-shadow 0.35s var(--ease-out), border-color 0.35s; }
+.card:hover { transform: translateY(-6px); box-shadow: 0 12px 32px rgba(201, 169, 98, 0.15); border-color: var(--color-gold); }
+.cardLabel { font-family: var(--font-serif); font-size: 1.2rem; font-weight: 500; color: var(--color-ink); display: block; margin-bottom: var(--space-xs); }
+.cardDesc { font-size: 0.9rem; color: var(--color-charcoal); line-height: 1.5; margin: 0 0 var(--space-sm); }
+.cardCta { font-size: 0.85rem; font-weight: 500; color: var(--color-gold); letter-spacing: 0.02em; }

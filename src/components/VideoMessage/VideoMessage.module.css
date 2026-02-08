@@ -1,0 +1,50 @@
+/* Video Message — elegant frame, mobile-optimized */
+
+.section {
+  padding: var(--space-2xl) var(--space-md);
+  background: var(--color-ivory);
+}
+
+.inner {
+  max-width: 36rem;
+  margin: 0 auto;
+  transition: opacity 0.9s var(--ease-out), transform 0.9s var(--ease-out);
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--color-ink);
+  margin: 0 0 var(--space-lg);
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.frame {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  background: var(--color-warm-beige);
+}
+
+.iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.caption {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-charcoal);
+  margin: var(--space-md) 0 0;
+  text-align: center;
+  font-style: italic;
+}
